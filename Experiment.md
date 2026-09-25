@@ -1,4 +1,4 @@
-## v0 — Zero-shot baseline 
+## v0 - Zero-shot baseline 
 - Hypothesis: an off-the-shelf open-vocabulary detector gives a usable baseline without any training.
 - Change: YOLO-World v2 (yolov8s-worldv2), text prompts = our 6 class names, no fine-tuning.
 - Eval set: data-v1 val — 349 images, 501 objects.
@@ -17,7 +17,7 @@
 - Decision: fine-tune a YOLOv8n detector on our data (v1).
 
 
-## v1 — First fine-tuned model  
+## v1 - First fine-tuned model  
 - Hypothesis: fine-tuning a small detector on our data will beat the zero-shot baseline by a wide margin.
 - Change: YOLOv8n (COCO-pretrained), 30 epochs, imgsz 640, batch 16, seed 42.
 - Infra: data copied to local Colab disk before training (fixes slow Drive I/O).
